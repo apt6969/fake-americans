@@ -1,9 +1,10 @@
 import random
 import string
+import secrets
 
 def generate_password(length):
     characters = string.ascii_letters + string.digits + string.punctuation
-    password = ''.join(random.choice(characters) for _ in range(length))
+    password = ''.join(secrets.choice(characters) for i in range(length))
     return password
 
 def main():
