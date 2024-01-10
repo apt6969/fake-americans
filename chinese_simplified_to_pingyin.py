@@ -13,4 +13,4 @@ def translate_to_pinyin(text):
     return ' '.join(pinyin_words)
 
 if __name__ == "__main__":
-    return sys.argv[1]
+    return translate_to_pinyin(sys.argv[1])
